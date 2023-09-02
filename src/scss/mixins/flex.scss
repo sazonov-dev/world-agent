@@ -1,0 +1,34 @@
+//.main-container {
+//  height: 100vh;
+//  @include flex-center
+//  .centered-item {
+//    width: 100%;
+//    max-width: 400px;
+//  }
+//}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+}

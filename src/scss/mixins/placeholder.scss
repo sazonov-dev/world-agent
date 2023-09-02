@@ -1,0 +1,16 @@
+// Mixin который решит проблему адаптиа под любой браузер, передаст все что необходимо автоматически
+
+//input,
+//textarea {
+//  @include input-placeholder {
+//    color: #333333;
+//  }
+//}
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}

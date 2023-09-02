@@ -1,0 +1,12 @@
+@use 'mixins' as *;
+
+.header__nav {
+  @include flex-center;
+  gap: 30px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px){
+  .header__nav {
+    gap: 5px;
+  }
+}

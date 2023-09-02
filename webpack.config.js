@@ -21,15 +21,11 @@ module.exports = {
     module: {
         rules: [
             {
-                // регулярное выражение, которое ищет все js файлы
                 test: /\.js$/,
-                // при обработке этих файлов нужно использовать babel-loader
                 use: 'babel-loader',
-                // исключает папку node_modules, файлы в ней обрабатывать не нужно
                 exclude: '/node_modules/'
             },
             {
-                // регулярное выражение, которое ищет все файлы с такими расширениями
                 test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
                 type: 'asset/resource'
             },
@@ -49,10 +45,7 @@ module.exports = {
                 ],
             },
             {
-                // применять это правило только к CSS-файлам
                 test: /\.css$/,
-                // при обработке этих файлов нужно использовать
-                // MiniCssExtractPlugin.loader и css-loader
                 use: [stylesHandler, MiniCssExtractPlugin.loader, {
                     loader: 'css-loader',
                     options: { importLoaders: 1 }
@@ -64,6 +57,18 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src", "index.html"),
             filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, "src", "pages", "ui.html"),
+            filename: 'ui.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, "src", "pages", "header.html"),
+            filename: 'header.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, "src", "pages", "footer.html"),
+            filename: 'footer.html'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()

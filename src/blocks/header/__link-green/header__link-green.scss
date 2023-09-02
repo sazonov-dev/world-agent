@@ -1,0 +1,13 @@
+.header__link-green {
+  display: block;
+  color: #18CBA0;
+  padding: 12px 15px;
+  border-radius: 10.256px;
+  border: 1.368px solid #18CBA0;
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px){
+  .header__link-green {
+    display: block;
+  }
+}

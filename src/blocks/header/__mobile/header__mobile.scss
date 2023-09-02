@@ -1,0 +1,16 @@
+@use 'mixins' as *;
+
+.header__mobile {
+  display: none;
+  cursor: pointer;
+  padding: 20px 10px;
+  border-radius: 7px;
+  background-color: #F3F3F3;
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px){
+  .header__mobile {
+    @include flex-start-column;
+    gap: 5px;
+  }
+}

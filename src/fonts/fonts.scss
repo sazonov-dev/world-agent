@@ -1,17 +1,17 @@
 @font-face {
-  src: url('./ttf/Unbounded-Light.ttf') format('truetupe');
+  src: url('./ttf/Unbounded-Light.ttf') format('truetupe'), url("./woff2/Unbounded-Light.woff2") format('woff2');
   font-family: 'Unbounded';
   font-weight: 300;
 }
 
 @font-face {
-  src: url('./ttf/Unbounded-Regular.ttf') format('truetupe');
+  src: url('./ttf/Unbounded-Regular.ttf') format('truetupe'), url("./woff2/Unbounded-Regular.woff2") format('woff2');
   font-family: 'Unbounded';
   font-weight: 400;
 }
 
 @font-face {
-  src: url('./ttf/Unbounded-Medium.ttf') format('truetupe');
+  src: url('./ttf/Unbounded-Medium.ttf') format('truetupe'), url("./woff2/Unbounded-Medium.woff2") format('woff2');
   font-family: 'Unbounded';
   font-weight: 500;
 }

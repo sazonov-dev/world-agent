@@ -4,7 +4,7 @@
   background-color: rgba(0, 0, 0, 0.60);
 }
 
-.header__mobile-line:last-of-type {
+.header__mobile-line:nth-child(2) {
   width: 13px;
 }
 

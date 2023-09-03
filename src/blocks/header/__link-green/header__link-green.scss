@@ -4,6 +4,11 @@
   padding: 12px 15px;
   border-radius: 10.256px;
   border: 1.368px solid #18CBA0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.header__link-green:hover {
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 360px) and (max-width: 640px){

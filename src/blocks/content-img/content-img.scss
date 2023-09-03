@@ -1,0 +1,29 @@
+.content-img {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 1130px;
+  margin: 0 auto;
+  height: 369px;
+  border-radius: 30px;
+  background-color: #18CBA0;
+  z-index: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .content-img {
+    max-width: 880px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .content-img {
+    max-width: 560px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px){
+  .content-img {
+    max-width: 310px;
+    overflow: hidden;
+  }
+}

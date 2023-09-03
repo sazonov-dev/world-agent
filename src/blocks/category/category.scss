@@ -1,0 +1,22 @@
+@use 'mixins' as *;
+
+.category {
+  max-width: 1129px;
+  margin: 30px auto 52px;
+  text-align: center;
+  @include flex-center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media screen and (max-width: 960px){
+  .category {
+    max-width: 879px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px){
+  .category {
+    max-width: 310px;
+  }
+}

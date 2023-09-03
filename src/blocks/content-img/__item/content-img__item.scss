@@ -1,0 +1,61 @@
+@use 'mixins' as *;
+
+.content-img__item {
+  @include flex-start;
+  gap: 10px;
+  position: absolute;
+  z-index: 4;
+  max-width: 250px;
+  min-height: 44px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.item-one {
+  top: 23px;
+  left: 105px;
+}
+
+.item-two {
+  top: 110px;
+  left: 70px;
+}
+
+.item-three {
+  bottom: 130px;
+  left: 60px;
+}
+
+.item-four {
+  bottom: 41px;
+  left: 105px;
+}
+
+.item-five {
+  top: 23px;
+  right: 105px;
+}
+
+.item-six {
+  top: 110px;
+  right: 70px;
+}
+
+.item-seven {
+  bottom: 130px;
+  right: 60px;
+}
+
+.item-eight {
+  bottom: 41px;
+  right: 105px;
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 640px){
+  .content-img__item {
+    display: none;
+  }
+}

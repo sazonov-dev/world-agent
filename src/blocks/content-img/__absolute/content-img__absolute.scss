@@ -1,0 +1,54 @@
+.content-img__absolute {
+  position: absolute;
+  z-index: 9;
+  object-fit: cover;
+}
+
+.absolute-one {
+  top: -10px;
+  right: 45px;
+  width: 125px;
+  height: 125px;
+}
+
+.absolute-two {
+  bottom: 25px;
+  right: 28px;
+  width: 68px;
+  height: 68px;
+}
+
+.absolute-three {
+  top: 130px;
+  right: 340px;
+  width: 67px;
+  height: 67px;
+}
+
+.absolute-four {
+  top: 185px;
+  right: 320px;
+  width: 32px;
+  height: 32px;
+}
+
+.absolute-five {
+  bottom: 21px;
+  left: 36px;
+  width: 71px;
+  height: 71px;
+}
+
+.absolute-six {
+  bottom: 100px;
+  left: 290px;
+  width: 122px;
+  height: 122px;
+}
+
+.absolute-seven {
+  top: -30px;
+  left: 123px;
+  width: 80px;
+  height: 80px;
+}

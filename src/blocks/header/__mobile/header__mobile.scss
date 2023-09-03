@@ -1,6 +1,7 @@
 @use 'mixins' as *;
 
 .header__mobile {
+  position: relative;
   display: none;
   cursor: pointer;
   padding: 20px 10px;

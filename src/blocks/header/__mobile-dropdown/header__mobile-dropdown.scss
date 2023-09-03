@@ -1,0 +1,20 @@
+@use 'mixins' as *;
+
+.header__mobile-dropdown {
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  bottom: -90px;
+  right: 0;
+  width: 152px;
+  height: 80px;
+  background-color: #fff;
+  border: 1.368px solid #18cba0;
+  border-radius: 10.256px;
+  padding: 15px;
+}
+
+.header__mobile-dropdown.active, .link-dropdown {
+  @include flex-start-column;
+  gap: 5px;
+}

@@ -1,0 +1,13 @@
+.content__description {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+}
+
+@media screen and (max-width: 960px){
+  .content__description {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

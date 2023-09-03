@@ -11,5 +11,129 @@
     <a href="header.html">header</a>
     <a href="footer.html">footer</a>
     <a href='ui.html'>ui</a>
+    <%= require('html-loader!./pages/header.html').default %>
+    <main class="main">
+        <section class="content">
+            <h2 class="content__title">Добро пожаловать на World Agent</h2>
+            <p class="content__description">Платформа, где границы не являются преградой для получения качественных услуг!</p>
+        </section>
+        <section class="select">
+            <select class="select__category" name="select-category" id="select-category">
+                <option class="select__category-option" value="" selected>Выберите услугу</option>
+                <option class="select__category-option" value="registration-document">Оформление документов</option>
+                <option class="select__category-option" value="select-house">Подбор жилья</option>
+                <option class="select__category-option" value="booking-house">Бронирование жилья</option>
+                <option class="select__category-option" value="delivery-package">Передать посылку</option>
+                <option class="select__category-option" value="send-package">Отправить посылку</option>
+            </select>
+            <button class="button button__green">Все агенты</button>
+        </section>
+        <section class="category">
+            <p class="category__item">Бронирование жилья</p>
+            <p class="category__item">Подбор жилья</p>
+            <p class="category__item">Оформление документов</p>
+            <p class="category__item">Получить посылку</p>
+            <p class="category__item">Отправить посылку</p>
+            <p class="category__item">Юридическая помощь</p>
+            <p class="category__item">Трансфер</p>
+            <p class="category__item">Онлайн консультация</p>
+            <p class="category__item">Поиск недвижимости</p>
+            <p class="category__item">Помощь в поиске авто</p>
+            <p class="category__item">Помощь в поиске мотоцикла</p>
+        </section>
+        <section class="content content-bottom">
+            <h2 class="content__title">Уникальное сообщество агентов, специализирующихся на предоставлении удаленных услуг в других странах</h2>
+            <p class="content__description">Независимо от того, что вас интересует – перевод документов, выбор и доставка товаров, организация мероприятий или помощь в решении бытовых задач – наши профессионалы готовы оказать вам качественную поддержку.</p>
+        </section>
+        <section class="content-img">
+            <div class="content-img__ellipse">
+                <div class="ellipse w-1110"></div>
+                <div class="ellipse w-1042"></div>
+                <div class="ellipse w-972"></div>
+                <div class="ellipse w-902"></div>
+                <div class="ellipse w-838"></div>
+                <div class="ellipse w-772"></div>
+                <div class="ellipse w-706"></div>
+                <div class="ellipse w-636"></div>
+                <div class="ellipse w-568"></div>
+                <div class="ellipse w-504"></div>
+                <div class="ellipse w-442"></div>
+                <div class="ellipse w-378"></div>
+                <div class="ellipse w-312"></div>
+            </div>
+            <div class="content-img__item item-one">
+                <div class="content-img__item-ellipse">
+                    <div class="ellipse-fill"></div>
+                </div>
+                <p class="content-img__item-description">
+                    Перевод документов
+                </p>
+            </div>
+            <div class="content-img__item item-two">
+                <div class="content-img__item-ellipse">
+                    <div class="ellipse-fill"></div>
+                </div>
+                <p class="content-img__item-description">
+                    Бронирование жилья
+                </p>
+            </div>
+            <div class="content-img__item item-three">
+                <div class="content-img__item-ellipse">
+                    <div class="ellipse-fill"></div>
+                </div>
+                <p class="content-img__item-description">
+                    Трансфер
+                </p>
+            </div>
+            <div class="content-img__item item-four">
+                <div class="content-img__item-ellipse">
+                    <div class="ellipse-fill"></div>
+                </div>
+                <p class="content-img__item-description">
+                    Поиск недвижимости
+                </p>
+            </div>
+            <div class="content-img__item item-five">
+                <div class="content-img__item-ellipse">
+                    <div class="ellipse-fill"></div>
+                </div>
+                <p class="content-img__item-description">
+                    Онлайн консультация
+                </p>
+            </div>
+            <div class="content-img__item item-six">
+                <div class="content-img__item-ellipse">
+                    <div class="ellipse-fill"></div>
+                </div>
+                <p class="content-img__item-description">
+                    Получить посылку
+                </p>
+            </div>
+            <div class="content-img__item item-seven">
+                <div class="content-img__item-ellipse">
+                    <div class="ellipse-fill"></div>
+                </div>
+                <p class="content-img__item-description">
+                    Бронирование жилья
+                </p>
+            </div>
+            <div class="content-img__item item-eight">
+                <div class="content-img__item-ellipse">
+                    <div class="ellipse-fill"></div>
+                </div>
+                <p class="content-img__item-description">
+                    Помощь в поиске авто
+                </p>
+            </div>
+            <img src="<%=require('./images/general-img-woman.png')%>" alt="Фотография девушки" class="content-img__image">
+<!--            <img src="<%=require('./images/content-img/1.png')%>" alt="Изображение кольца" class="content-img__absolute absolute-one">-->
+<!--            <img src="<%=require('./images/content-img/12.png')%>" alt="Изображение кольца" class="content-img__absolute absolute-two">-->
+<!--            <img src="<%=require('./images/content-img/47.png')%>" alt="Изображение кольца" class="content-img__absolute absolute-three">-->
+<!--            <img src="<%=require('./images/content-img/47-reverse.png')%>" alt="Изображение кольца" class="content-img__absolute absolute-four">-->
+<!--            <img src="<%=require('./images/content-img/54.png')%>" alt="Изображение кольца" class="content-img__absolute absolute-five">-->
+<!--            <img src="<%=require('./images/content-img/71.png')%>" alt="Изображение кольца" class="content-img__absolute absolute-six">-->
+<!--            <img src="<%=require('./images/content-img/82.png')%>" alt="Изображение кольца" class="content-img__absolute absolute-seven">-->
+        </section>
+    </main>
 </body>
 </html>

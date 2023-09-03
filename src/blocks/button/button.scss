@@ -1,0 +1,22 @@
+@use 'mixins' as *;
+
+.button {
+  font-family: 'Unbounded', 'Arial', sans-serif;
+  all: unset;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  padding: 43px 69px;
+  border-radius: 20px;
+  transition: opacity 0.2s ease-in-out;
+  white-space: nowrap;
+  box-sizing: border-box;
+  @include flex-center;
+  flex: 1;
+  width: 100%;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
